@@ -14,6 +14,8 @@
 		C99F1F9C1FFA2223004E044B /* PrimeField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99F1F861FFA155B004E044B /* PrimeField.swift */; };
 		C99F1F9D1FFA227B004E044B /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99F1F881FFA1584004E044B /* Field.swift */; };
 		C99F1FA01FFA2FB3004E044B /* EllipticCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99F1F9F1FFA2FB3004E044B /* EllipticCurve.swift */; };
+		C99F1FA31FFA7DED004E044B /* EllipticCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99F1F9F1FFA2FB3004E044B /* EllipticCurve.swift */; };
+		C99F1FA51FFA7EBC004E044B /* EllipticCurveCreationTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99F1FA41FFA7EBC004E044B /* EllipticCurveCreationTestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +39,7 @@
 		C99F1F961FFA21A2004E044B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C99F1F9A1FFA21C6004E044B /* PrimeFieldTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeFieldTestCase.swift; sourceTree = "<group>"; };
 		C99F1F9F1FFA2FB3004E044B /* EllipticCurve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllipticCurve.swift; sourceTree = "<group>"; };
+		C99F1FA41FFA7EBC004E044B /* EllipticCurveCreationTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllipticCurveCreationTestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,7 @@
 			children = (
 				C99F1F961FFA21A2004E044B /* Info.plist */,
 				C99F1F9A1FFA21C6004E044B /* PrimeFieldTestCase.swift */,
+				C99F1FA41FFA7EBC004E044B /* EllipticCurveCreationTestCase.swift */,
 			);
 			path = "Elliptic-Swift-Tests";
 			sourceTree = "<group>";
@@ -214,8 +218,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C99F1F9C1FFA2223004E044B /* PrimeField.swift in Sources */,
+				C99F1FA51FFA7EBC004E044B /* EllipticCurveCreationTestCase.swift in Sources */,
 				C99F1F9B1FFA21C6004E044B /* PrimeFieldTestCase.swift in Sources */,
 				C99F1F9D1FFA227B004E044B /* Field.swift in Sources */,
+				C99F1FA31FFA7DED004E044B /* EllipticCurve.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
