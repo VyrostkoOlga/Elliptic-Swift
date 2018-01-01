@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		C99F1F7F1FFA14D7004E044B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99F1F7E1FFA14D7004E044B /* main.swift */; };
+		C99F1F871FFA155B004E044B /* PrimeField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99F1F861FFA155B004E044B /* PrimeField.swift */; };
+		C99F1F891FFA1584004E044B /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99F1F881FFA1584004E044B /* Field.swift */; };
+		C99F1F9B1FFA21C6004E044B /* PrimeFieldTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99F1F9A1FFA21C6004E044B /* PrimeFieldTestCase.swift */; };
+		C99F1F9C1FFA2223004E044B /* PrimeField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99F1F861FFA155B004E044B /* PrimeField.swift */; };
+		C99F1F9D1FFA227B004E044B /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99F1F881FFA1584004E044B /* Field.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +30,22 @@
 /* Begin PBXFileReference section */
 		C99F1F7B1FFA14D7004E044B /* Elliptic-Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Elliptic-Swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99F1F7E1FFA14D7004E044B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C99F1F861FFA155B004E044B /* PrimeField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeField.swift; sourceTree = "<group>"; };
+		C99F1F881FFA1584004E044B /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
+		C99F1F921FFA21A2004E044B /* Elliptic-Swift-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Elliptic-Swift-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C99F1F961FFA21A2004E044B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C99F1F9A1FFA21C6004E044B /* PrimeFieldTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeFieldTestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C99F1F781FFA14D7004E044B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C99F1F8F1FFA21A2004E044B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				C99F1F7D1FFA14D7004E044B /* Elliptic-Swift */,
+				C99F1F931FFA21A2004E044B /* Elliptic-Swift-Tests */,
 				C99F1F7C1FFA14D7004E044B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				C99F1F7B1FFA14D7004E044B /* Elliptic-Swift */,
+				C99F1F921FFA21A2004E044B /* Elliptic-Swift-Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +76,28 @@
 		C99F1F7D1FFA14D7004E044B /* Elliptic-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				C99F1F851FFA154C004E044B /* Field */,
 				C99F1F7E1FFA14D7004E044B /* main.swift */,
 			);
 			path = "Elliptic-Swift";
+			sourceTree = "<group>";
+		};
+		C99F1F851FFA154C004E044B /* Field */ = {
+			isa = PBXGroup;
+			children = (
+				C99F1F861FFA155B004E044B /* PrimeField.swift */,
+				C99F1F881FFA1584004E044B /* Field.swift */,
+			);
+			path = Field;
+			sourceTree = "<group>";
+		};
+		C99F1F931FFA21A2004E044B /* Elliptic-Swift-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C99F1F961FFA21A2004E044B /* Info.plist */,
+				C99F1F9A1FFA21C6004E044B /* PrimeFieldTestCase.swift */,
+			);
+			path = "Elliptic-Swift-Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +120,23 @@
 			productReference = C99F1F7B1FFA14D7004E044B /* Elliptic-Swift */;
 			productType = "com.apple.product-type.tool";
 		};
+		C99F1F911FFA21A2004E044B /* Elliptic-Swift-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C99F1F971FFA21A2004E044B /* Build configuration list for PBXNativeTarget "Elliptic-Swift-Tests" */;
+			buildPhases = (
+				C99F1F8E1FFA21A2004E044B /* Sources */,
+				C99F1F8F1FFA21A2004E044B /* Frameworks */,
+				C99F1F901FFA21A2004E044B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Elliptic-Swift-Tests";
+			productName = "Elliptic-Swift-Tests";
+			productReference = C99F1F921FFA21A2004E044B /* Elliptic-Swift-Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -94,6 +149,11 @@
 				TargetAttributes = {
 					C99F1F7A1FFA14D7004E044B = {
 						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					C99F1F911FFA21A2004E044B = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -111,16 +171,39 @@
 			projectRoot = "";
 			targets = (
 				C99F1F7A1FFA14D7004E044B /* Elliptic-Swift */,
+				C99F1F911FFA21A2004E044B /* Elliptic-Swift-Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C99F1F901FFA21A2004E044B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C99F1F771FFA14D7004E044B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C99F1F871FFA155B004E044B /* PrimeField.swift in Sources */,
 				C99F1F7F1FFA14D7004E044B /* main.swift in Sources */,
+				C99F1F891FFA1584004E044B /* Field.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C99F1F8E1FFA21A2004E044B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C99F1F9C1FFA2223004E044B /* PrimeField.swift in Sources */,
+				C99F1F9B1FFA21C6004E044B /* PrimeFieldTestCase.swift in Sources */,
+				C99F1F9D1FFA227B004E044B /* Field.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +334,35 @@
 			};
 			name = Release;
 		};
+		C99F1F981FFA21A2004E044B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Elliptic-Swift-Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "OlgaVyrostko.Elliptic-Swift-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		C99F1F991FFA21A2004E044B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Elliptic-Swift-Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "OlgaVyrostko.Elliptic-Swift-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -268,6 +380,15 @@
 			buildConfigurations = (
 				C99F1F831FFA14D7004E044B /* Debug */,
 				C99F1F841FFA14D7004E044B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C99F1F971FFA21A2004E044B /* Build configuration list for PBXNativeTarget "Elliptic-Swift-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C99F1F981FFA21A2004E044B /* Debug */,
+				C99F1F991FFA21A2004E044B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
