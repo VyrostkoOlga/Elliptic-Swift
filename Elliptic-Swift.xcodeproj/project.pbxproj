@@ -13,6 +13,7 @@
 		C99F1F9B1FFA21C6004E044B /* PrimeFieldTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99F1F9A1FFA21C6004E044B /* PrimeFieldTestCase.swift */; };
 		C99F1F9C1FFA2223004E044B /* PrimeField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99F1F861FFA155B004E044B /* PrimeField.swift */; };
 		C99F1F9D1FFA227B004E044B /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99F1F881FFA1584004E044B /* Field.swift */; };
+		C99F1FA01FFA2FB3004E044B /* EllipticCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99F1F9F1FFA2FB3004E044B /* EllipticCurve.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		C99F1F921FFA21A2004E044B /* Elliptic-Swift-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Elliptic-Swift-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99F1F961FFA21A2004E044B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C99F1F9A1FFA21C6004E044B /* PrimeFieldTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeFieldTestCase.swift; sourceTree = "<group>"; };
+		C99F1F9F1FFA2FB3004E044B /* EllipticCurve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllipticCurve.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		C99F1F7D1FFA14D7004E044B /* Elliptic-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				C99F1F9E1FFA2F9F004E044B /* EllipticCurve */,
 				C99F1F851FFA154C004E044B /* Field */,
 				C99F1F7E1FFA14D7004E044B /* main.swift */,
 			);
@@ -98,6 +101,14 @@
 				C99F1F9A1FFA21C6004E044B /* PrimeFieldTestCase.swift */,
 			);
 			path = "Elliptic-Swift-Tests";
+			sourceTree = "<group>";
+		};
+		C99F1F9E1FFA2F9F004E044B /* EllipticCurve */ = {
+			isa = PBXGroup;
+			children = (
+				C99F1F9F1FFA2FB3004E044B /* EllipticCurve.swift */,
+			);
+			path = EllipticCurve;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C99F1F871FFA155B004E044B /* PrimeField.swift in Sources */,
+				C99F1FA01FFA2FB3004E044B /* EllipticCurve.swift in Sources */,
 				C99F1F7F1FFA14D7004E044B /* main.swift in Sources */,
 				C99F1F891FFA1584004E044B /* Field.swift in Sources */,
 			);

@@ -36,6 +36,22 @@ class PrimeField: Field {
         return correct(element: lhs * rhs)
     }
     
+    func pow(lhs: Int, rhs: Int) -> Int {
+        // https://en.wikipedia.org/wiki/Exponentiation_by_squaring
+        var result = 1
+        var degree = rhs
+        var lhs_degree = lhs
+        while degree > 0 {
+            if degree & 1 == 1 {
+                result = mult(lhs: result, rhs: lhs_degree)
+                degree -= 1
+            }
+            lhs_degree = mult(lhs: lhs_degree, rhs: lhs_degree)
+            degree >>= 1
+        }
+        return result
+    }
+    
     // opposites
     
     func oppositeForSum(element: Int) -> Int {

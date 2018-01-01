@@ -23,6 +23,7 @@ protocol Field {
     func add(lhs: Int, rhs: Int) -> Int
     func sub(lhs: Int, rhs: Int) -> Int
     func mult(lhs: Int, rhs: Int) -> Int
+    func pow(lhs: Int, rhs: Int) -> Int
     
     // opposites for field operations,
     // for multiplication - if possible

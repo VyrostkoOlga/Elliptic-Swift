@@ -45,7 +45,11 @@ class PrimeFieldTestCase: XCTestCase {
     
     func testOppositeForMult() {
         XCTAssertEqual(8, try pf.oppositeForMult(element: 5))
-        
     }
 
+    func testPow() {
+        XCTAssertEqual(4, pf.pow(lhs: 2, rhs: 2))
+        XCTAssertEqual(8, pf.pow(lhs: 2, rhs: 3))
+        XCTAssertEqual(3, pf.pow(lhs: 2, rhs: 4))
+    }
 }
