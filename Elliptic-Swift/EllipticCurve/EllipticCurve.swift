@@ -67,6 +67,10 @@ class EllipticCurve {
     }
     
     func isOnCurve(point: Point) -> Bool {
+        if point.isInfinity() {
+            return true
+        }
+        
         // check using curve equation
         let left = field.mult(lhs: point.y, rhs: point.y)
         var right = field.mult(lhs: field.mult(lhs: point.x, rhs: point.x), rhs: point.x)
