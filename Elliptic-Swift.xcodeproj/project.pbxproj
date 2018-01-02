@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C99AE2E71FFBCD5E00FA3A29 /* EllipticCurveAdditionTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99AE2E61FFBCD5E00FA3A29 /* EllipticCurveAdditionTestCase.swift */; };
 		C99F1F7F1FFA14D7004E044B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99F1F7E1FFA14D7004E044B /* main.swift */; };
 		C99F1F871FFA155B004E044B /* PrimeField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99F1F861FFA155B004E044B /* PrimeField.swift */; };
 		C99F1F891FFA1584004E044B /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99F1F881FFA1584004E044B /* Field.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C99AE2E61FFBCD5E00FA3A29 /* EllipticCurveAdditionTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllipticCurveAdditionTestCase.swift; sourceTree = "<group>"; };
 		C99F1F7B1FFA14D7004E044B /* Elliptic-Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Elliptic-Swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99F1F7E1FFA14D7004E044B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C99F1F861FFA155B004E044B /* PrimeField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeField.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				C99F1F9A1FFA21C6004E044B /* PrimeFieldTestCase.swift */,
 				C99F1FA41FFA7EBC004E044B /* EllipticCurveCreationTestCase.swift */,
 				C99F1FA61FFA8225004E044B /* EllipticCurveIsOnCurveTestCase.swift */,
+				C99AE2E61FFBCD5E00FA3A29 /* EllipticCurveAdditionTestCase.swift */,
 			);
 			path = "Elliptic-Swift-Tests";
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				C99F1FA71FFA8225004E044B /* EllipticCurveIsOnCurveTestCase.swift in Sources */,
 				C99F1F9C1FFA2223004E044B /* PrimeField.swift in Sources */,
 				C99F1FA51FFA7EBC004E044B /* EllipticCurveCreationTestCase.swift in Sources */,
+				C99AE2E71FFBCD5E00FA3A29 /* EllipticCurveAdditionTestCase.swift in Sources */,
 				C99F1F9B1FFA21C6004E044B /* PrimeFieldTestCase.swift in Sources */,
 				C99F1F9D1FFA227B004E044B /* Field.swift in Sources */,
 				C99F1FA31FFA7DED004E044B /* EllipticCurve.swift in Sources */,
