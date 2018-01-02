@@ -23,5 +23,14 @@ class EllipticCurveAdditionTestCase: XCTestCase {
         XCTAssertEqual(Point(x: 17, y: 3, z: 1), try curve.add(p1: Point(x: 1, y: 7, z: 1), p2: Point(x: 0, y: 22, z: 1)))
         XCTAssertEqual(Point(x: 17, y: 20, z: 1), try curve.add(p1: Point(x: 3, y: 10, z: 1), p2: Point(x: 9, y: 7, z: 1)))
     }
+    
+    func testAdditionWithInfinity() throws {
+        XCTAssertEqual(Point(x: 1, y: 7, z: 1), try curve.add(p1: Point(x: 1, y: 7, z: 1), p2: Point(x: 0, y: 22, z: 0)))
+        XCTAssertEqual(Point(x: 9, y: 7, z: 1), try curve.add(p1: Point(x: 3, y: 10, z: 0), p2: Point(x: 9, y: 7, z: 1)))
+    }
+    
+    func testOppositePointsAddition() throws {
+        XCTAssertEqual(Point(x: 0, y: 1, z: 0), try curve.add(p1: Point(x: 1, y: 7, z: 1), p2: Point(x: 1, y: 16, z: 1)))
+    }
 
 }
